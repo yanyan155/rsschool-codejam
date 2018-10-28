@@ -31,3 +31,5 @@ function recursion(tree) {
 
   return ordered;
 }
+
+module.exports = recursion;

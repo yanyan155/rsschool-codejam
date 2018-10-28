@@ -1,0 +1,23 @@
+{
+  "name": "codejam3",
+  "version": "1.0.0",
+  "description": "implement tasks from codejam3 corejs",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanyan155/rsschool-codejam.git"
+  },
+  "author": "Yanis Machkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanyan155/rsschool-codejam/issues"
+  },
+  "homepage": "https://github.com/yanyan155/rsschool-codejam#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}

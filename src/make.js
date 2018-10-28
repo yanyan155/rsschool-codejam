@@ -18,3 +18,5 @@ function make(...args) {
 
   return recursion;
 }
+
+module.exports = make;
