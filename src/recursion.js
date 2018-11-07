@@ -1,31 +1,29 @@
 function recursion(tree) {
+  const nodes = [];
+  const ordered = [];
 
-  var nodes = [];
-  var ordered = [];
-
-  function going(tree,level) {
-    level++;
-    var obj = {
+  function going(level) {
+    level++; // eslint-disable-line no-param-reassign
+    const obj = {
       value: tree.value,
-      level: level
-    }
+      level,
+    };
     nodes.push(obj);
-    if(tree.left) {
+    if (tree.left) {
       going(tree.left, level);
     }
-    if(tree.right) {
+    if (tree.right) {
       going(tree.right, level);
     }
   }
 
   going(tree, 0);
 
-  nodes.sort((a,b) => b.level - a.level);
+  nodes.sort((a, b) => b.level - a.level);
 
-  for(var i = 1; i<=nodes[0].level; i++) {
-
-    var filter = nodes.filter(elem => elem.level === i);
-    var toPush = filter.map(elem => elem.value);
+  for (let i = 1; i <= nodes[0].level; i++) {
+    const filter = nodes.filter(elem => elem.level === i);
+    const toPush = filter.map(elem => elem.value);
     ordered.push(toPush);
   }
 
