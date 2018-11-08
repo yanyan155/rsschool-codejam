@@ -2,7 +2,7 @@ function recursion(tree) {
   const nodes = [];
   const ordered = [];
 
-  function going(level) {
+  function going(tree, level) { // eslint-disable-line
     level++; // eslint-disable-line no-param-reassign
     const obj = {
       value: tree.value,

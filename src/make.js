@@ -1,20 +1,17 @@
 function make(...args) {
   let store = [...args];
   function recursion(...elemens) {
-
-    const isNan = isNaN(elemens[0]);
+    const isNan = isNaN(elemens[0]); // eslint-disable-line no-restricted-globals
 
     if (!isNan) {
       store = [...store, ...elemens];
       return recursion;
-    };
-      const fn = elemens[0];
-      const res = store.reduce((prev, curr) => fn(prev, curr));
-      return res;
     }
+    const fn = elemens[0];
+    const res = store.reduce((prev, curr) => fn(prev, curr));
+    return res;
   }
-
-  return recursion; // eslint-disable-line
+  return recursion;
 }
 
 module.exports = make;
