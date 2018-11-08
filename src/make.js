@@ -3,7 +3,7 @@ function make(...args) {
   function recursion(...elemens) {
     const isNan = isNaN(elemens[0]); // eslint-disable-line no-restricted-globals
 
-    if (!isNan) {
+    if (!isNan && typeof elemens[0] !== 'function') {
       store = [...store, ...elemens];
       return recursion;
     }
