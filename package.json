@@ -1,0 +1,27 @@
+{
+  "name": "codejam3",
+  "version": "1.0.0",
+  "description": "implement tasks from codejam3 corejs",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha test.js",
+    "lint": "eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanyan155/rsschool-codejam.git"
+  },
+  "author": "Yanis Machkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanyan155/rsschool-codejam/issues"
+  },
+  "homepage": "https://github.com/yanyan155/rsschool-codejam#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
+  }
+}
